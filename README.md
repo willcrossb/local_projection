@@ -3,7 +3,7 @@
 ## codes folder:
 
 This contains my own local projection package that is intended to have a very general structure
-The user will create the shock vector and the full control vector themselves, and pass this to the locprof function
+The user will create the shock vector and the full control vector themselves, and pass this to the locproj function
 
 *lppy.py is the file containing the function* **locproj()** => a function to estimate local projection as in Jorda 2005
 
