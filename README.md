@@ -16,7 +16,6 @@ The user will create the shock vector and the full control vector themselves, an
 
 ------------------------OUTPUTS -----------------------------
 * irf: the dataframe of resulting response, confidence interval, and horizon
-* info_store: DF containing series info (units, titles, notes, etc.)
 
 References: https://www3.nd.edu/~nmark/Climate/Jorda%20-%20Local%20Projections.pdf
 ## Lag-augmented_LocalProjections-master folder
