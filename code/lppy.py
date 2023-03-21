@@ -12,11 +12,10 @@ X: matrix containig the shock of interest +  controls
 Y: response variable of interest (must be a single vector)
 innov_idx: column index of the shock vector in X (indexes start at zero)
 horizon: the # of periods you want to know the response for
-sig_level: add as an # in (00,100): ex. 90 => function will output 90% confidence interval
+sig_level: add as an # in (0,100): ex. 90 => function will output 90% confidence interval
 
 ------------------------OUTPUTS -----------------------------
-irf: the dataframe of resulting response, confidence interval, and horizon
-info_store: DF containing series info (units, titles, notes, etc.)
+irf: the dataframe of resulting response, confidence intervals, and horizon
 """
 
 def locproj(X,Y,innov_idx,horizon,sig_level):
@@ -48,6 +47,6 @@ def locproj(X,Y,innov_idx,horizon,sig_level):
         irf[h,2] = irf[h,1]+(model.HC0_se[innov_idx+1]*(-1*sig_level_se))
         irf[h,3] = irf[h,1]+(model.HC0_se[innov_idx+1]*sig_level_se)
     
-    #Collect resul matrix into a dataframe
+    #Collect result matrix into a dataframe
     irf_df = pd.DataFrame(irf, columns = ['horizon','resp','se_low','se_high'])
     return irf_df
