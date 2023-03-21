@@ -1,3 +1,4 @@
 /.DS_Store
 /.ipynb_checkpoints
-monPolShocks.ipynb
+code/config.py
+code/monPolShocks.ipynb
