@@ -1,6 +1,6 @@
 # local_projection
 
-## codes folder:
+## code folder:
 
 This contains my own local projection package that is intended to have a very general structure
 The user will create the shock vector and the full control vector themselves, and pass this to the locproj function
