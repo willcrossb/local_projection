@@ -1,5 +1,10 @@
 # local_projection
 
+This is a fork of fantastic work from Mikkel Plagborg-Møller, I am experimenting with translating that Matlab code into python. 
+Both as a coding exercise, and a way of attaining a deeper understanding of the econometrics
+
+Link to original repo: https://github.com/jm4474/Lag-augmented_LocalProjections
+
 ## code folder:
 
 This contains my own local projection package that is intended to have a very general structure
@@ -20,7 +25,3 @@ The user will create the shock vector and the full control vector themselves, an
 References: https://www3.nd.edu/~nmark/Climate/Jorda%20-%20Local%20Projections.pdf
 ## Lag-augmented_LocalProjections-master folder
 
-This is a fork of fantastic work from Mikkel Plagborg-Møller, I am experimenting with translating that Matlab code into python. 
-Both as a coding exercise, and a way of attaining a deeper understanding of the econometrics
-
-Link to original repo: https://github.com/jm4474/Lag-augmented_LocalProjections
